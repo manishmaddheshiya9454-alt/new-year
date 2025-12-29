@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy New Year</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Happy New Year</h1>
+      <p>Wishing you success, happiness, and new opportunities</p>
+    </header>
+
+    <div id="countdown">New Year Countdown: <span id="time"></span></div>
+
+    <div class="name-input">
+      <input type="text" id="nameInput" placeholder="Enter your name">
+      <button id="generateBtn">Generate Wishes</button>
+    </div>
+
+    <div class="year" id="year">2026</div>
+
+    <div class="message" id="message">
+      May the coming year bring you growth, positivity, and memorable achievements.
+      Let us welcome the new year with confidence, gratitude, and fresh goals.
+    </div>
+
+    <div class="share-options" id="shareOptions">
+      <a href="#" id="whatsappShare"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="#" id="facebookShare"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="#" id="twitterShare"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="#" id="instagramShare"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#" id="copyShare"><i class="fas fa-copy"></i> Copy</a>
+    </div>
+
+    <button id="surpriseBtn" class="action-btn" style="display:none;">Surprise!</button>
+
+    <button id="translateBtn" class="action-btn" style="display:none;">Translate to Hindi</button>
+
+    <button id="musicBtn" class="action-btn">Play Music</button>
+
+    <button id="fireworksBtn" class="action-btn">Fireworks</button>
+
+    <section class="card-section">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>🎯 नए लक्ष्य</h3>
+            <p>स्पष्ट लक्ष्य निर्धारित करें और दृढ़ संकल्प और फोकस के साथ आगे बढ़ें।</p>
+          </div>
+          <div class="card-back">
+            <h3>🎯 New Goals</h3>
+            <p>Set clear goals and move forward with determination and focus.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>🌱 नया विकास</h3>
+            <p>सीखने, सुधार और व्यक्तिगत विकास को अपनाएं।</p>
+          </div>
+          <div class="card-back">
+            <h3>🌱 New Growth</h3>
+            <p>Embrace learning, improvement, and personal development.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>✨ नई अवसर</h3>
+            <p>ताजा अवसरों का स्वागत करें और चुनौतियों को सफलता में बदलें।</p>
+          </div>
+          <div class="card-back">
+            <h3>✨ New Opportunities</h3>
+            <p>Welcome fresh opportunities and turn challenges into success.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="footerYear"></span> | BANIYA JI
+    </footer>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="clickSound">
+    <source src="https://www.soundjay.com/button/sounds/button-3.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
