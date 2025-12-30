@@ -101,9 +101,11 @@ header p {
   border-radius: 15px;
 }
 
-/* SHARE */
+/* ================= SHARE OPTIONS ================= */
+
 .share-options {
   display: none;
+  margin: 25px 0;
 }
 
 .share-options.show {
@@ -111,6 +113,28 @@ header p {
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
+}
+
+.share-options a {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #ffd700;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.share-options a:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 215, 0, 0.2);
+}
+
+.share-options i {
+  margin-right: 8px;
+  font-size: 1.2rem;
 }
 
 /* ACTION BUTTONS */
@@ -128,9 +152,7 @@ header p {
 #musicBtn { background: #ff9ff3; color: #fff; }
 #fireworksBtn { background: #feca57; color: #1a1a2e; }
 
-/* ===================== */
-/* 🔥 FIXED CARD AREA 🔥 */
-/* ===================== */
+/* ========== FIXED CARD AREA ========== */
 
 .card-section {
   display: grid;
@@ -140,13 +162,12 @@ header p {
 }
 
 .card {
-  height: 220px; /* FIXED HEIGHT */
+  height: 220px;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   cursor: pointer;
   perspective: 1000px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
 }
 
 .card-inner {
@@ -185,7 +206,6 @@ header p {
 
 .card p {
   font-size: 1.1rem;
-  opacity: 0.9;
   text-align: center;
 }
 
@@ -196,7 +216,7 @@ footer {
   opacity: 0.8;
 }
 
-/* 📱 MOBILE */
+/* MOBILE */
 @media (max-width: 600px) {
   .container {
     padding: 30px 20px;
